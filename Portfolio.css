@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    weight: 80px;
+    margin: 0px;
+    background-image: url(Yeux_sananes.png);
+}
+
+
+main {
+    margin: 100px;
+}
+
+header {
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+header, footer {
+    background-color: rgb(51, 0, 99);
+    margin: 0px;
+    padding: 30px;
+}
+
+header, footer {
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    margin: 0px;
+    font-size: 3em;
+}
+
+.burger_menu {
+    text-align: left;
+    color: rgb(224, 213, 3);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(7, 1, 0);
+    text-decoration: underline;
+}
+
+a {
+    margin-right: 20px;
+}
+
+a:link, a:visited {
+    color: rgb(224, 213, 3);
+    text-decoration: unset;
+}
+
+a:hover {
+    color: rgb(212, 204, 204);
+    text-decoration: underline;
+}
+
+img {
+    width: 400px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+#moi > img {
+    margin-left : 150px;
+    padding : 1px
+
+}
+
+footer > p {
+    margin: 0px;
+    padding: 30px;
+}
+
+.portfolio {
+    display: flex;
+}
+
+
+.portfolio > img {
+    padding-bottom: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.portfolio > p {
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .portfolio {
+        display: block;
+    }
+    .portfolio > div {
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+    form > textarea {
+        max-width: 80%;
+    }
+    img {
+        max-width: 100%;
+    }
+    #moi > img {
+        margin-left:0px
+    }
+}
