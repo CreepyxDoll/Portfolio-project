@@ -10,10 +10,9 @@
 <header>
     <h1>Mon Portfolio, le mien, rien qu'à moi</h1>
     <div class="burger_menu">
-        <label for="burger_menu">&#9776; Menu</label>
         <ul class="menu">
-            <li><a href="#accueil">La Star</a></li>
-            <li><a href="#a-propos">Moutonfolio</a></li>
+            <li><a href="#moi">La Star</a></li>
+            <li><a href="#portfolio">Moutonfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -31,7 +30,7 @@
     <section id="portfolio">
         <h2>Moutonfolio</h2>
         <div class="portfolio">
-            <img src="Kamal.jpg" alt="Projet 1">
+            <img src="Kamal.jpg" alt="Projet 1" id="Kamal">
             <p>Поведение "насильственных дельфинов", наблюдаемое у некоторых самцов, включает агрессивные сексуальные взаимодействия с другими дельфинами или видами. Хотя это поведение вызывает споры и встречается редко, оно может быть обусловлено социальными и экологическими факторами. Оно характерно только для меньшинства особей и не должно обобщаться на всю популяцию.</p>
         </div>
         <div class="portfolio">
@@ -43,7 +42,6 @@
             <p>Les personnes ayant un front plus grand devraient être jugées ou stigmatisées en raison de leur apparence. Les caractéristiques physiques varient d'une personne à l'autre et f(r)ont partie de ce qui rend chacun unique. Plutôt que de se concentrer sur les apparences, il est préférable de valoriser les fronts.</p>
         </div>
     </section>
-
     <section id="contact">
         <h2>Contact</h2>
         <form>
@@ -66,4 +64,22 @@
 </footer>
 
 </body>
+
+
+<audio id="KAMAL" src="KAMAL.m4a" preload="auto"></audio>
+
+<script>
+    var kamalquiparle = document.getElementById("KAMAL");
+    var image = document.getElementById("Kamal");
+
+    image.addEventListener("mouseover", function() {
+        kamalquiparle.play();
+    });
+
+    image.addEventListener("mouseout", function() {
+        kamalquiparle.pause();
+    });
+
+</script>
+
 </html>

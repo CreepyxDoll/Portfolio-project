@@ -82,34 +82,34 @@ footer > p {
     display: flex;
 }
 
-
-.portfolio > img {
-    padding-bottom: 20px;
-    height: 400px;
-    width: 400px;
+#Kamal:hover {
+    animation: growShrink 1s infinite alternate;
 }
 
-.portfolio > p {
-    padding-left: 30px;
-    padding-top: 50px;
+@keyframes growShrink {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
 
-
-@media only screen and (max-width: 768px){
-    .portfolio {
-        display: block;
-    }
-    .portfolio > div {
-        padding-left: 0px;
-        padding-bottom: 20px;
-    }
-    form > textarea {
-        max-width: 80%;
-    }
+@media only screen and (max-width: 600px) {
     img {
-        max-width: 100%;
+        width:170px;
+        height: 270px;
     }
+
+    .portfolio {
+        flex-wrap: wrap;
+    }
+
     #moi > img {
-        margin-left:0px
+        margin-left: 0px;
     }
-}
+
+    textarea {
+        max-width: 200px;
+    }
+  }
